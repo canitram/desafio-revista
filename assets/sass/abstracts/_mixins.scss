@@ -21,9 +21,8 @@
     }
 }
 
-/* .module {
-    width: 25%;
-    @include breakpoint(baby-bear) {
-      width: 100%;
-    }
-  } */
+//reset margenes del contenedor
+@mixin flexContainer{
+    margin-left: -3rem;
+    margin-right: -3rem;
+}

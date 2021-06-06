@@ -3,10 +3,10 @@
     'abstracts/mixins';
 
 @import
-    'base/reset',
-    'base/grid';
+    'base/reset';
 
 @import
+    'layout/grid',
     'layout/navigation',
     'layout/main',
     'layout/footer',
@@ -16,4 +16,3 @@
     'components/buttons',
     'components/inputs';
 
-    
