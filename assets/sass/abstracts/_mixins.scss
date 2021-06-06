@@ -1,0 +1,29 @@
+@mixin breakpoint($size) {
+    @if $size == xlarge-size {
+        @media (min-width: 1200px) {
+        @content; 
+        }
+    }
+    @else if $size == large-size {
+        @media (min-width: 992px) {
+            @content; 
+        }
+    }
+    @else if $size == medium-size {
+        @media (min-width: 768px) {
+            @content; 
+        }
+    }
+    @else if $size == small-size {
+        @media (min-width: 576px) {
+            @content; 
+        }
+    }
+}
+
+/* .module {
+    width: 25%;
+    @include breakpoint(baby-bear) {
+      width: 100%;
+    }
+  } */
