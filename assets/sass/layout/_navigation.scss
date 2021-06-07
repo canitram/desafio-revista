@@ -1,1 +1,33 @@
-//This file is for create your style with relation on space of navbar
+.container__menu{
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 2px solid $gray;
+    .menu__brand{
+        font-family: $primary-font;
+        font-size: $x-large;
+        font-weight: $font-bold;
+        align-self: center;
+    }
+    .menu__navigation{
+        font-family: $secundary-font;
+        font-size: $small;
+        font-weight:$font-light;
+        & ul{
+            list-style: none;
+            display: flex;
+        }
+        & li{
+            margin-right: 0.75rem;
+            & input{
+                border-radius: 1.5rem;
+                border: 2px inset $gray;
+            }
+        }
+        & a{
+            text-decoration: none;
+        }
+    }
+}

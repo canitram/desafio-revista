@@ -3,6 +3,24 @@ $dark: #33313b;
 $lightBlue: #4592af;
 $pastelPink: #e3c4a8;
 $gray: #f6f5f5;
+//font family
+$source-sans: 'Source Sans Pro', sans-serif;
+$syne: 'Syne', sans-serif;
+
+
+//Font sizes
+
+$xx-large: 70px;
+$x-large: 30px;
+$large: 18px;
+$medium: 16px;
+$small: 12px;
+
+//Font Weight
+
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
 
 //breakpoints
 $xlarge : 'xlarge-size';
@@ -12,7 +30,6 @@ $small: 'small-size';
 
 
 //
-
-
-
+$primary-font: $syne;
+$secundary-font: $source-sans;
 

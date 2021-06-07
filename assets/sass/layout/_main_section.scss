@@ -1,0 +1,16 @@
+.news__main-space{
+    font-family: $primary-font;
+    justify-content: space-between;
+    .noticia{
+        width: 30%;
+        text-align: start;
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+}.news__left-space{
+    width: 30%;
+    justify-self: end;
+}
+
