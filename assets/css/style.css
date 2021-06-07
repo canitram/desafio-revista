@@ -1,43 +1,17 @@
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: expected "{".
+ *    ,
+ * 22 | >>>>>>> 3543597aabebde11b7fad9edd28100c21ca03419
+ *    |                                                 ^
+ *    '
+ *   assets\sass\main.scss 22:49  root stylesheet */
 
-.container {
-  display: grid;
-  height: 100vh;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
-  grid-template-areas: "navmenu navmenu navmenu navmenu navmenu" "cardNews cardNews cardNews cardNews sideNews" "cardNews cardNews cardNews cardNews sideNews" "newsletter newsletter newsletter newsletter newsletter" "sign sign sign sign sign";
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 22 \2502  >>>>>>> 3543597aabebde11b7fad9edd28100c21ca03419\d\a    \2502                                                  ^\a    \2575 \a   assets\\sass\\main.scss 22:49  root stylesheet';
 }
-
-.container__menu {
-  margin-left: -3rem;
-  margin-right: -3rem;
-  grid-area: navmenu;
-}
-
-.container__news {
-  align-content: space-between;
-}
-.container__news .news__main-space {
-  grid-area: cardNews;
-}
-.container__news .news__left-space {
-  grid-area: sideNews;
-}
-
-.container__newsletter {
-  margin-left: -3rem;
-  margin-right: -3rem;
-  grid-area: newsletter;
-}
-
-.container__footer {
-  grid-area: sign;
-}
-
-/*# sourceMappingURL=style.css.map */
