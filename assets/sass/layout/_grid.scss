@@ -1,20 +1,17 @@
 .container{
     display: grid;
-    height: 100vh;
+    height: 100%;
     margin-left:3rem;
     margin-right: 3rem;
     grid-gap: 1rem;
-    width: 100%;
-    grid-auto-columns: auto;
-    grid-auto-rows: auto;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 5rem 2fr 2fr 1fr 1fr;
     grid-template-areas:
-        "navmenu navmenu"
-        "cardNews sideNews"
-        "cardNews sideNews"
-        "newsletter newsletter"
-        "sign sign"
+        "navmenu navmenu navmenu navmenu"
+        "cardNews cardNews cardNews sideNews"
+        "cardNews cardNews cardNews sideNews"
+        "newsletter newsletter newsletter newsletter"
+        "sign sign sign sign";
 }
 
 .container__menu{
@@ -22,7 +19,6 @@
     grid-area: navmenu;
 }
 
-.container__news{
     .news__main-space{
         grid-area: cardNews;
         display: flex;
@@ -31,8 +27,8 @@
     }
     .news__left-space{
         grid-area: sideNews;
+        width: 100%;
     }
-}
 
 .container__newsletter{
     @include flexContainer;
@@ -41,4 +37,5 @@
 
 .container__footer{
     grid-area: sign;
+    grid-row: 4/ 5;
 }

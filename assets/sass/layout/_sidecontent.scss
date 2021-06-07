@@ -1,1 +1,15 @@
-//This file is for create your style with relation on space of header
+.news__left-space{
+    text-align: justify;
+    display:block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 2.5rem;
+}
+
+.left-space__header{
+    text-align: justify;
+    font-family: $secundary-font;
+}
+

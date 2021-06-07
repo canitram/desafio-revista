@@ -6,16 +6,13 @@ html {
 
 .container {
   display: grid;
-  height: 100vh;
+  height: 100%;
   margin-left: 3rem;
   margin-right: 3rem;
   grid-gap: 1rem;
-  width: 100%;
-  grid-auto-columns: auto;
-  grid-auto-rows: auto;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
-  grid-template-areas: "navmenu navmenu" "cardNews sideNews" "cardNews sideNews" "newsletter newsletter" "sign sign";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 5rem 2fr 2fr 1fr 1fr;
+  grid-template-areas: "navmenu navmenu navmenu navmenu" "cardNews cardNews cardNews sideNews" "cardNews cardNews cardNews sideNews" "newsletter newsletter newsletter newsletter" "sign sign sign sign";
 }
 
 .container__menu {
@@ -24,14 +21,16 @@ html {
   grid-area: navmenu;
 }
 
-.container__news .news__main-space {
+.news__main-space {
   grid-area: cardNews;
   display: flex;
   flex-wrap: wrap;
   max-width: 80vw;
 }
-.container__news .news__left-space {
+
+.news__left-space {
   grid-area: sideNews;
+  width: 100%;
 }
 
 .container__newsletter {
@@ -42,6 +41,7 @@ html {
 
 .container__footer {
   grid-area: sign;
+  grid-row: 4/5;
 }
 
 .container__menu {
@@ -92,8 +92,28 @@ html {
 }
 
 .news__left-space {
-  width: 30%;
-  justify-self: end;
+  text-align: justify;
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 2.5rem;
+}
+
+.left-space__header {
+  text-align: justify;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container__newsletter {
+  background-color: #f6f5f5;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
